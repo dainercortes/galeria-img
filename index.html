@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Universo F4</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-images.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-search.css">
+    <link rel="stylesheet" href="./css/contenedor-frame.css">
+</head>
+<body>
+    <div class="container-search">
+        <a href="index.html">
+            <img src="./img/logo.svg" alt="Logo" class="logo">
+        </a>  
+
+        <form action="">
+            <input type="text" id="search-input" placeholder="Buscar imágenes">
+            <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+    <div class="info">
+        <div class="left">
+            <h1>Galeria Universo F4</h1>
+            <p>Gran variedad de imagenes de internet.</p>
+        </div>
+        <div class="right">
+            <div class="categories">
+                <a href="#">Gatos</a>
+                <a href="#">Aves</a>
+                <a href="#">Perros</a>
+                <a href="#">Paisajes</a>
+                <a href="#">Autos</a>
+                <a href="#">Japón</a>
+            </div>
+            <div class="slider">
+                <ul id="image-list">
+                    <li><img src="https://images.unsplash.com/photo-1631048510642-23661dafd391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHwyM3x8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkyfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
+                    <li><img src=https://images.unsplash.com/photo-1620834073708-477e0bbc5a8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHwzOHx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkyfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
+                    <li><img src="https://images.unsplash.com/photo-1629831457146-51398162c779?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHw2Nnx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkzfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
+                    <li><img src="https://images.unsplash.com/photo-1553227582-6d8929b3c49d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHw3OXx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkzfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container-categories">
+        <div class="categories">
+            <a href="#"></a>
+        </div>
+        <div class="featured"></div>
+    </div>
+
+    <div id="contenedor-frame">
+        <div class="contenedor">
+            <div class="menu">
+                <i class="fa-solid fa-bookmark bookmark"></i>
+                <i class="fa-solid fa-heart heart"></i>
+                <div class="content-download">
+                    <button>Descargar</button>
+                    <i class="fa-solid fa-download download"></i>
+                </div>
+                
+            </div>
+            <img id="full-image" src="./img/1.jpg" alt="imagen">
+        </div>
+    </div>
+
+    <div class="search-results">
+        <!-- ............. -->
+    </div>
+
+    <button id="show-more-button">Ver más</button>
+
+    <script src="https://kit.fontawesome.com/e592da9494.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/script.js"></script> 
+    <script type="module" src="./js/open-image.js"></script>
+</body>
+</html>

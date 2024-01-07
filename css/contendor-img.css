@@ -1,0 +1,59 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: calc(10% - 12px);
+    margin-bottom: 20px;
+}
+.menu .bookmark, .menu .heart, .menu .content-download button, .menu .content-download .download {
+    padding: 0 15px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #FFF;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu .content-download {
+    display: flex;
+}
+
+.menu .content-download button {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.menu .content-download .download {
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.menu .bookmark:hover, .menu .heart:hover, .menu .content-download:hover > button, .menu .content-download:hover > .download {
+    border: 1px solid #4a4a4a;
+}
+
+.contenedor img {
+    width: auto;
+    height: calc(90% - 12px);
+    object-fit: cover;
+}
