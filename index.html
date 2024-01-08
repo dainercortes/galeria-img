@@ -18,7 +18,7 @@
         </a>  
 
         <form action="">
-            <input type="text" id="search-input-index" placeholder="Buscar imágenes">
+            <input type="text" id="search-input" placeholder="Buscar imágenes">
             <button id="search-button">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -31,19 +31,19 @@
         </div>
         <div class="right">
             <div class="categories">
-                <a href="#">Gatos</a>
-                <a href="#">Aves</a>
-                <a href="#">Perros</a>
-                <a href="#">Paisajes</a>
-                <a href="#">Autos</a>
-                <a href="#">Japón</a>
+                <a class="class" href="./images.html">Gatos</a>
+                <a class="class" href="./images.html">Aves</a>
+                <a class="class" href="./images.html">Perros</a>
+                <a class="class" href="./images.html">Paisajes</a>
+                <a class="class" href="./images.html">Autos</a>
+                <a class="class" href="./images.html">Japón</a>
             </div>
             <div class="slider">
                 <ul id="image-list">
-                    <li><img src="https://images.unsplash.com/photo-1631048510642-23661dafd391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHwyM3x8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkyfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
-                    <li><img src=https://images.unsplash.com/photo-1620834073708-477e0bbc5a8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHwzOHx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkyfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
-                    <li><img src="https://images.unsplash.com/photo-1629831457146-51398162c779?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHw2Nnx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkzfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
-                    <li><img src="https://images.unsplash.com/photo-1553227582-6d8929b3c49d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NDk1MDF8MHwxfHNlYXJjaHw3OXx8ZmVhdHVyZWR8ZW58MHx8fHwxNzA0NjQ2NzkzfDA&ixlib=rb-4.0.3&q=80&w=400" alt=""></li>
+                    <li><img src="./img/1.jpg" alt=""></li>
+                    <li><img src="./img/2.jpg" alt=""></li>
+                    <li><img src="./img/3.jpg" alt=""></li>
+                    <li><img src="./img/4.jpg" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -56,18 +56,8 @@
     </div>
 
     <div id="contenedor-frame">
-        <div class="contenedor">
-            <div class="menu">
-                <i class="fa-solid fa-bookmark bookmark"></i>
-                <i class="fa-solid fa-heart heart"></i>
-                <div class="content-download">
-                    <button>Descargar</button>
-                    <i class="fa-solid fa-download download"></i>
-                </div>
-                
-            </div>
-            <img id="full-image" src="./img/1.jpg" alt="imagen">
-        </div>
+        <button id="close" class="btn-close" onclick="closeDiv()"><i class="fa-solid fa-xmark close"></i></button>
+        <iframe id="container-html" src="" frameborder="0"></iframe>    
     </div>
 
     <div class="search-results">
@@ -78,10 +68,9 @@
 
     <script src="https://kit.fontawesome.com/e592da9494.js" crossorigin="anonymous"></script>
     <script src="./js/api.js"></script>
-    
-    <!-- <script src="./js/full-images.js"></script> -->
     <script src="./js/index.js"></script>
-    <script src="./js/images.js"></script>
+    <script src="./js/full-images.js"></script>
+    <script src="./js/images.js"></script>   
     <script src="./js/main.js"></script>
     
 </body>

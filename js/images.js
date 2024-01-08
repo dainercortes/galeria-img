@@ -3,6 +3,8 @@ class Images {
 
     //Inserta la imagen en el html
     addImages(results, searchResults, page) {
+        const fullImage = new FullImages()
+
         try {
             results.map((result) => {
                 const imageWrapper = document.createElement('div')
@@ -14,8 +16,16 @@ class Images {
                     
                 imageWrapper.classList.add(this.sizeImage(result.width, result.height));
         
-                // const imageLink = document.createElement('a')
-                //imageLink.href = result.urls.regular
+                imageWrapper.addEventListener('click', () => 
+                {
+                    try {
+                        localStorage.setItem('search-img', result.urls.regular)
+                        
+                        fullImage.toggleDiv()
+                    } catch (error) {
+                        console.log(error)
+                    }                             
+                })
         
                 const iconBookMark = document.createElement('i')
                 iconBookMark.classList.add('fa-solid')
@@ -36,12 +46,7 @@ class Images {
                 imageWrapper.appendChild(image)
                 imageWrapper.appendChild(iconBookMark)
                 imageWrapper.appendChild(iconHeart)
-                imageWrapper.appendChild(iconDownload)
-
-                // imageWrapper.addEventListener('click', () => 
-                // {
-                //     //toggleDiv(result.urls.regular)          
-                // })
+                imageWrapper.appendChild(iconDownload)          
 
                 searchResults.appendChild(imageWrapper)
             })
@@ -90,5 +95,6 @@ class Images {
             console.log(error)
         }    
     }
+    
 } 
 

@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 10px 20px;
+    padding: 10px 20px 30px 20px;
     background-color: #FFF;
     border-radius: 10px;
 }
@@ -18,6 +18,7 @@
     height: calc(10% - 12px);
     margin-bottom: 20px;
 }
+
 .menu .bookmark, .menu .heart, .menu .content-download button, .menu .content-download .download {
     padding: 0 15px;
     height: 40px;
@@ -25,7 +26,7 @@
     background-color: #FFF;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
     text-align: center;
     color: #333;
@@ -54,6 +55,13 @@
 
 .contenedor img {
     width: auto;
-    height: calc(90% - 12px);
+    height: calc(90% - 30px);
     object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        justify-content: center;
+
+    }
 }

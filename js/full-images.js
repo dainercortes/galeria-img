@@ -1,17 +1,17 @@
 class FullImages {
-    toggleDiv(url) {
+    
+    toggleDiv() {
         const divOculto = document.getElementById('contenedor-frame')
-        const fullImage = document.getElementById('full-image')
-    
-        if (divOculto.style.display == 'none') {
-            divOculto.style.display = 'flex'
-    
-            fullImage.src = url
-    
-            //localStorage.setItem('url-image', url)
-       
+        const iframe = document.getElementById('container-html')
+
+        console.log(divOculto.style.display)
+
+        if (divOculto.style.display != 'flex') { 
+            iframe.src = '../contenedor-img.html'      
+            divOculto.style.display = 'flex'      
         } else {
             divOculto.style.display = 'none'
         }
-    }
+    }   
 }
+
