@@ -1,24 +1,25 @@
+const input = localStorage.getItem('search-text')
 
 document.addEventListener('DOMContentLoaded', async function() {
+    localStorage.removeItem('search-text')
+    
     const api = new Api()
     const images = new Images()
-    let result = []
     // const fullImages = new FullImages()
-
+    let result = []
     const formEl = document.querySelector('form')
     const showMore = document.getElementById('show-more-button')
 
-    result = await api.searchImagesAPI(api.inputEl.value)
-
-    console.log(result)
+    result = await api.searchImagesAPI(input)
 
     images.addImages(result, api.searchResults, api.page)
 
-    // formEl.addEventListener('submit', (event) =>{
+    // formEl.addEventListener('submit', async (event) =>{
     //     try {
     //         event.preventDefault()
     //         api.page = 1
-    //         api.searchImagesAPI(inputEl.value)
+    //         result = await api.searchImagesAPI(input)
+    //         images.addImages(result, api.searchResults, api.page)
     //     } catch (error) {
     //         console.log(error)
     //     }
@@ -28,9 +29,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     showMore.addEventListener('click', async () => {
         try {
             api.page++
-            result = await api.searchImagesAPI(api.inputEl.value)
+            result = await api.searchImagesAPI(input)
             images.addImages(result, api.searchResults, api.page)
-            //images.addImages(result, api.searchResults, api.page)
         } catch (error) {
             console.log(error)
         }    
