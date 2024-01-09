@@ -3,8 +3,8 @@ let input = localStorage.getItem('search-text')
 document.addEventListener('DOMContentLoaded', async function() {
     
     var pageName = window.location.pathname.split('/').pop();
-    console.log(pageName, ':)')
-    pageName == 'index.html' ? input = '' : false
+    pageName == '' ? input = '' : false
+    pageName == 'index' ? input = '' : false
 
     const api = new Api()
     const images = new Images()
