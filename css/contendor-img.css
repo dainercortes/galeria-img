@@ -4,10 +4,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 10px 20px 30px 20px;
+    height: 100%;
+    max-height: 100vh;
+    padding: 20px 20px 30px 20px;
     background-color: #FFF;
     border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    
 }
 
 .menu {
@@ -15,7 +22,7 @@
     align-items: center;
     justify-content: right;
     width: 100%;
-    height: calc(10% - 12px);
+    height: calc(12% - 20px);
     margin-bottom: 20px;
 }
 
@@ -53,13 +60,22 @@
     border: 1px solid #4a4a4a;
 }
 
-.contenedor img {
+.contenedor-img {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-img img {
     /* width: auto;
     height: ; */
     height: auto;
     width: auto;
     max-width: 100%;
-    max-height: calc(90% - 30px);
+    max-height: 100%;
     object-fit: cover;
 }
 
