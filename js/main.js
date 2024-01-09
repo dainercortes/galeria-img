@@ -3,6 +3,7 @@ let input = localStorage.getItem('search-text')
 document.addEventListener('DOMContentLoaded', async function() {
     
     var pageName = window.location.pathname.split('/').pop();
+    console.log(pageName, ':)')
     pageName == 'index.html' ? input = '' : false
 
     const api = new Api()
