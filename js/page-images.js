@@ -6,13 +6,11 @@ const formEl = document.querySelector('form')
 window.onload = function() {
     if(extractText != null) {
         changeData(extractText)
-        
     }
 }
 
 //Cambia los datos
 function changeData(extractText) {
-    console.log(extractText, "111")
     document.getElementById('search-input').value = extractText
     document.getElementById('text-search').textContent = "Resultados para: " + extractText
 }

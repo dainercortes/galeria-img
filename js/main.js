@@ -1,7 +1,8 @@
 let input = localStorage.getItem('search-text')
 
 document.addEventListener('DOMContentLoaded', async function() {
-    
+    localStorage.setItem('global', false)
+
     var pageName = window.location.pathname.split('/').pop();
     pageName == '' ? input = '' : false
     pageName == 'index' ? input = '' : false
@@ -34,9 +35,9 @@ document.addEventListener('DOMContentLoaded', async function() {
 function closeDiv() {
     const divOculto = document.getElementById('contenedor-frame')
     const iframe = document.getElementById('container-html')
-    
+
     if (divOculto.style.display == 'flex') {
         divOculto.style.display = 'none'
-        iframe.src = null
+        localStorage.setItem('global', false)   
     }
 }

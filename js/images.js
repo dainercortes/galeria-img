@@ -18,9 +18,9 @@ class Images {
         
                 imageWrapper.addEventListener('click', () => 
                 {
-                    try {
+                    try {                     
                         localStorage.setItem('search-img', result.urls.regular)
-                        
+                       
                         fullImage.toggleDiv()
                     } catch (error) {
                         console.log(error)
